@@ -27,5 +27,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.Preco = Preco;
             this.Qtde = Qtde;
         }
+
+        public override string ToString()
+        {
+            return IdPagamento + "," + Preco + "," + Qtde;
+        }
     }
 }

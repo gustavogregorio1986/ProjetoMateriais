@@ -28,5 +28,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.NomeAdm = NomeAdm;
             this.EmailAdm = EmailAdm;
         }
+
+        public override string ToString()
+        {
+            return IdAdministrador + "," + NomeAdm + "," + EmailAdm;
+        }
     }
 }

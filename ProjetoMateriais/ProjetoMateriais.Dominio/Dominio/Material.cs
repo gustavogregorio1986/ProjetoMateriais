@@ -30,5 +30,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.DataCadastro = DataCadastro;
             this.Descricao = Descricao;
         }
+
+        public override string ToString()
+        {
+            return IdMaterial + "," + Nomematerial + "," + DataCadastro + "," + Descricao;
+        }
     }
 }

@@ -34,5 +34,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.EmailCliente = EmailCliente;
             this.Sexo = Sexo;
         }
+
+        public override string ToString()
+        {
+            return IdCliente + "," + NomeCliente + "," + EmailCliente + "," + Sexo;
+        }
     }
 }

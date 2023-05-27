@@ -32,5 +32,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.Senha = Senha;
             this.Perfil = Perfil;
         }
+
+        public override string ToString()
+        {
+            return IdUser + "," + Login + "," + Senha + "," + Perfil;
+        }
     }
 }

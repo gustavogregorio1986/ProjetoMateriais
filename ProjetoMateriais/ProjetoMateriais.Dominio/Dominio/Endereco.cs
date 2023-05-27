@@ -36,5 +36,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.Uf = Uf;
             this.Cep = Cep;
         }
+
+        public override string ToString()
+        {
+            return IdEndereco + "," + Logradouro + "," + Bairro + "," + Cidade + "," + Uf + "," + Cep;
+        }
     }
 }

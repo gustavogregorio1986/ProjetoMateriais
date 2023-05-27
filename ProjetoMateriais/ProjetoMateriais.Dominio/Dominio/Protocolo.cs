@@ -35,5 +35,10 @@ namespace ProjetoMateriais.Dominio.Dominio
             this.DataInicio = DataInicio;
             this.DataFim = DataFim;
         }
+
+        public override string ToString()
+        {
+            return IdProtocolo + "," + NomeProtocolo + "," + SerieProtocolo + "," + DataInicio + "," + DataFim;
+        }
     }
 }
